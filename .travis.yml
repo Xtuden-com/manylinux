@@ -16,6 +16,7 @@ matrix:
     - env: PLATFORM="i686"
     - env: PLATFORM="x86_64"
 
+
 script:
   - docker build --rm -t quay.io/pypa/manylinux1_$PLATFORM:$TRAVIS_COMMIT -f docker/Dockerfile-$PLATFORM docker/
 
